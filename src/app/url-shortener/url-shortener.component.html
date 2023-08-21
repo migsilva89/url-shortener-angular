@@ -1,0 +1,28 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>URL Shortener</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Enter a long URL"
+          [(ngModel)]="originalUrl" />
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="getUrl()"
+        [disabled]="!originalUrl">
+        Shorten URL
+      </button>
+    </mat-card-content>
+    <mat-card-footer>
+      <p class="shortened-url" *ngIf="shortUrl && !errorMsg">
+        Shortened URL: <a target="_blank" [href]="hrefUrl">{{ shortUrl }}</a>
+      </p>
+      <p class="error-message" *ngIf="errorMsg">Error: {{ errorMsg }}</p>
+    </mat-card-footer>
+  </mat-card>
+</div>

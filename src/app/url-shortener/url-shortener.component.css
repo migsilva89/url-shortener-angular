@@ -1,0 +1,86 @@
+/* Apply CSS to the parent container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures full viewport height */
+  background-color: #0f172a;
+}
+
+/* Apply CSS to the mat-card component */
+mat-card {
+  width: 50%;
+  min-width: 300px;
+  background-color: #1f3873;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Apply CSS to the mat-card-header component */
+mat-card-header {
+  background-color: #1f3873;
+  padding: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Apply CSS to the mat-card-content component */
+mat-card-content {
+  padding: 16px;
+}
+
+/* Apply CSS to the mat-form-field component */
+mat-form-field {
+  width: 100%;
+}
+
+/* Apply CSS to the input element inside mat-form-field */
+mat-form-field input {
+  font-size: 16px;
+  color: #1f3873;
+}
+
+/* Apply CSS to the mat-card-footer component */
+mat-card-footer {
+  background-color: #1f3873;
+  padding: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Apply CSS to the shortened URL link */
+.shortened-url {
+  font-size: 14px;
+  color: #f3f3f3;
+}
+
+/* Apply CSS to the button element */
+button {
+  margin-top: 16px;
+  background-color: #5b21b6;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Apply CSS to the button on hover */
+button:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Apply CSS to the URL box */
+a {
+  display: block;
+  background-color: #ffffff;
+  color: #0f172a;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+a:hover{
+  background-color:#5b21b6;
+  color:  #ffffff;
+}
